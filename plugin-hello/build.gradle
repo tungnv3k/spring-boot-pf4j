@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.saturium.plugins'
+version = '1.0.0'
+sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.pf4j:pf4j:3.13.0'
+    compileOnly project(':app-main')
+    annotationProcessor 'org.pf4j:pf4j:3.13.0'
+}
